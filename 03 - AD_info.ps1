@@ -1,3 +1,4 @@
+# Externes Script, listet die wesentlichen Eigenschaften des AD auf; spukt viele Fehlermeldungen aus, wenn Strukturen fehlen.
 $Computers = (Get-ADComputer -Filter *).count
 $Workstations = (Get-ADComputer -LDAPFilter "(&(objectClass=Computer)(!operatingSystem=*server*))" -Searchbase (Get-ADDomain).distinguishedName).count
 $Servers = (Get-ADComputer -LDAPFilter "(&(objectClass=Computer)(operatingSystem=*server*))" -Searchbase (Get-ADDomain).distinguishedName).count
