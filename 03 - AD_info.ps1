@@ -21,11 +21,11 @@ ElseIf ($ADNum -eq '30') {$srv = 'Windows Server 2003'}
 
 
 
-Write-Host "For this Domain there are;"
-Write-Host "Computers =    "$Computers -ForegroundColor Cyan
+Write-Host "In dieser Domaene gibt es:"
+Write-Host "Computer =    "$Computers -ForegroundColor Cyan
 Write-Host "Workstions =   "$Workstations -ForegroundColor Cyan
-Write-Host "Servers =      "$Servers -ForegroundColor Cyan
-Write-Host "Users =        "$Users -ForegroundColor Cyan
+Write-Host "Server =      "$Servers -ForegroundColor Cyan
+Write-Host "User =        "$Users -ForegroundColor Cyan
 Write-host ""
 Write-host "Active Directory Info" -ForegroundColor Yellow
 Write-Host "Active Directory Forest Mode =  "$ADForest -ForegroundColor Cyan
