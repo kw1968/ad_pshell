@@ -5,8 +5,8 @@ Einfache Powershell Befehle zum Konfigurieren eines AD mit grundlegenden Dienste
 Es handlet sich hier um eine halautomatische Installation eines ADS mit Hilfe einfachster Scriptbefehle.
 Es gibt weder eine augefeilte, elegante Fehlerbehandlung, noch sind die Scripte über ein übergeordnetes Script aufrufbar.
 Das ist hier nicht der Sinn der ganzen Liste.
-Ziel ist es, absolurten Einsteigern zu verdeutlichen, dass viele Aufgaben in der GUI des Windows Servers 2019 auch durch Powershell Befehle durchgeführt werden können.
-Hierbei erhält man auch noch eine gute Dokumentationsmöglichkeit und eine ARt BAckup der KOnfiguration, die teuolweise sehr parktisch sein kann (GPOs, DHCP)
+Ziel ist es, absoluten Einsteigern zu verdeutlichen, dass viele Aufgaben in der GUI des Windows Servers 2019 auch durch Powershell Befehle durchgeführt werden können.
+Hierbei erhält man auch noch eine gute Dokumentationsmöglichkeit und eine Art Backup der Konfiguration, die teilweise sehr parktisch sein kann (GPOs, DHCP)
 
 Liste der Scripte
 
