@@ -1,4 +1,4 @@
-# Passwort für AD Wiederherstellungskonto festlegen
+# Passwort für AD Wiederherstellungskonto festlegen; es handelt sich NICHT um das Admin Konto!
 $PSSHT = @{
     String = 'Pa$$w0rd'
     AsPlainText = $true
@@ -6,8 +6,8 @@ $PSSHT = @{
 }
 # Passwort muss verschlüsselt werden
 $PSS = ConvertTo-SecureString @PSSHT
-# Domäne festlegen: Name und Windows Server 2016 Modus;
-# die Meldungen über NT 4.0 Unterstützung und DNS Delegierung können ignoriert werden
+# Domäne festlegen: Name (Schulnetz.local) und Windows Server 2016 Modus (WinThreshold = höchst möglicher Modus);
+# Die Meldungen über NT 4.0 Unterstützung und DNS Delegierung können bei Erstinstallation ignoriert werden
 $ADHT = @{
     DomainName = 'Schulnetz.local'
     SafeModeAdministratorPassword = $PSS
@@ -15,6 +15,7 @@ $ADHT = @{
     DomainMode = 'WinThreshold'
     ForestMode = 'WinThreshold'
     Force = $true
+    # Der Neustart wird untern entweder erzwungen oder manuell ausgeführt. Wichtig bei Remoteverbindungen!
     NoRebootOnCompletion = $true
 }
 # Installation und Neustart
