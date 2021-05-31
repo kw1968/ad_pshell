@@ -1,3 +1,4 @@
+# Auf DC01 und DC02 ausführen, wenn man zwei Domänencontroller haben will
 # Passwort für AD Wiederherstellungskonto festlegen; es handelt sich NICHT um das Admin Konto!
 $PSSHT = @{
     String = 'Pa$$w0rd'
