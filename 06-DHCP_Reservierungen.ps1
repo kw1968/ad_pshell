@@ -1,8 +1,8 @@
 # Reservierungen aus bestehenden Clients generieren
-# Konzept: Noch keine IP ADressen wurden per DHCP vergeben. FreeIP holt dann beginnend von der
+# Konzept: Noch keine IP Adressen wurden per DHCP vergeben. FreeIP holt dann beginnend von der
 # untersten verfügbaren IP Adresse (hier 10.36.39.100) der Reihe nach die freien Adressen
 # aus dem Bereich ScopeID.
-# Kennt man eine Liste der MAC Adressen, so kann man die Reservierungen der REihe nach festlegen.
+# Kennt man eine Liste der MAC Adressen, so kann man die Reservierungen der Reihe nach festlegen.
 # 
 $FreeIP = Get-DhcpServerv4FreeIPAddress -ComputerName "DC01.schulnetz.local" -ScopeId 10.36.39.0
 #
