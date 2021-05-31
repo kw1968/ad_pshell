@@ -1,6 +1,6 @@
 # Konfiguration der DHCP Bereiche
 
-# Bereiche festlegen
+# Bereiche festlegen; bitte an eigenes Netzwerk anpassen!
 
 # Schuelernetz; State = Active wäre nicht nötig, da Defaultwert
 $SHT01 = @{
