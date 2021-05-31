@@ -20,7 +20,7 @@ Function Replace-Umlaut {
     $characterMap.([Int][Char]'Ö') = "Oe"
     $characterMap.([Int][Char]' ') = "."
     $characterMap.([Int][Char]'á') = "_"
-    
+    # Hier kann die Austauschtabelle beliebig erweitert werden
     # Replace chars
     ForEach ($key in $characterMap.Keys) {
         $Text = $Text -creplace ([Char]$key),$characterMap[$key] 
