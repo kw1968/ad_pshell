@@ -1,4 +1,4 @@
-# DHCP installieren; Ausrufezeichen taucht wieder auf, weil was konfiguriert werden muss
+# DHCP mit Verwaltungskonsole installieren; Ausrufezeichen taucht wieder auf, weil was konfiguriert werden muss
 Install-WindowsFeature -Name DHCP -IncludeManagementTools
 # DHCP Sicherheitsgruppe anlegen mit ausführlicher Meldung
 Add-DHCPServerSecurityGroup -Verbose
