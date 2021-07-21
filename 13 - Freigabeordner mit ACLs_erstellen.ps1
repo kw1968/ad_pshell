@@ -19,7 +19,7 @@ $IRHT1 = @{
         AccessRights = 'FullControl'
         }
         Remove-NTFSAccess @AHT2
-# Admin Vollzugriff geben - optional, falsch gewünscht
+# Admin Vollzugriff geben - optional, falls gewünscht
 $AHT3 = @{
     Path = 'C:\Vorgaben\'
     Account = 'VORDEFINIERT\Administratoren'
