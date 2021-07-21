@@ -41,11 +41,11 @@ $AHT6 = @{
     Revoke-SmbShareAccess @AHT6 | Out-Null
 #
 # Vorgabefreigabe anpassen
-
+# Lehrergruppe Vollzugriff geben
 $AHT5 = @{
     Name = 'Vorgaben'
     AccessRight = 'Full'
-    AccountName = 'Alle'
+    AccountName = 'Lehrer'
     Confirm = $false
     }
     Grant-SmbShareAccess @AHT5 | Out-Null
